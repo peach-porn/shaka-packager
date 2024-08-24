@@ -14,6 +14,12 @@ on:
       ref:
         required: true
         type: string
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: The ref to build from.
+        required: true
+        type: string
 
 # By default, run all commands in a bash shell.  On Windows, the default would
 # otherwise be powershell.
